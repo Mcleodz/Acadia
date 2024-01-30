@@ -11,12 +11,23 @@ let about_dict = {
 }
 
 let past_paper_dict = {
-    "Calculus": "Complex Numbers (AS91577): </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2021/91577-exm-2021.pdf'>2021</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2020/91577-exm-2020.pdf'>2020</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2019/91577-exm-2019.pdf'>2019</a> </br> </br>"
+    "Calculus": "Complex Numbers (AS91577): </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2021/91577-exm-2021.pdf'>2021</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2020/91577-exm-2020.pdf'>2020</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2019/91577-exm-2019.pdf'>2019</a> </br> </br> Differentiation (AS91578): </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2021/91578-exm-2021.pdf'>2021</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2020/91578-exm-2020.pdf'>2020</a> </br> - <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2019/91578-exm-2019.pdf'>2019</a>",
+
+    "Physics": "Mechanics (AS91524): </br> - <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2021/91524-exm-2021.pdf'>2021</a> </br> - <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2020/91524-exm-2020.pdf'>2020</a> </br> - <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2019/91524-exm-2019.pdf'>2019</a> </br> </br>"
 }
 
 let assessment_schedule_dict = {
-    "Calculus": "Complex Numbers (AS91577): </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2021/91577-ass-2021.pdf'>2021</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2020/91577-ass-2020.pdf'>2020</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2019/91577-ass-2019.pdf'>2019</a> </br> </br>"
+    "Calculus": "Complex Numbers (AS91577): </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2021/91577-ass-2021.pdf'>2021</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2020/91577-ass-2020.pdf'>2020</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2019/91577-ass-2019.pdf'>2019</a> </br> </br> Differentiation (AS91578): </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2021/91578-ass-2021.pdf'>2021</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2020/91578-ass-2020.pdf'>2020</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2019/91578-ass-2019.pdf'>2019</a>",
+
+    "Physics": "Mechanics (AS91524): </br> - <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2021/91524-ass-2021.pdf'>2021</a> </br> - <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2020/91524-ass-2020.pdf'>2020</a> </br> - <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2019/91524-ass-2019.pdf'>2019</a> </br> </br>"
 }
+
+let study_guides_dict = {
+    "Calculus": "Complex Numbers (AS91577): </br> -  <a href='https://www.youtube.com/watch?v=oYrk8Y2C8jo&list=PLGHMh2fiud5c-xjJH3bJqNPJcLOOh9qaF'> Infinity Plus One </a> </br></br></br></br> Differentiation (AS91578): </br> -  <a href='https://www.youtube.com/watch?v=Zemmq02a40M&pp=ygUpaW5maW5pdHkgcGx1cyBvbmUgbGV2ZWwgMyBkaWZmZXJlbnRpYXRpb24%3D'> Infinity Plus One </a> </br></br></br>",
+
+    "Physics": "Mechanics (AS91524): </br> - <a href='https://www.nobraintoosmall.co.nz/html/senior_physics/NCEA3_physics_mechanical_systems.html'> No Brain Too Small </a> </br> </br> </br> </br>"
+}
+
 
 function clear_page(page_to_load) {
     if(page_to_load != "Home"){
@@ -54,9 +65,12 @@ function clear_page(page_to_load) {
         document.getElementById("past-paper-text").hidden = true;
         document.getElementById("assessment-schedule-child-text").hidden = true;
         document.getElementById("assessment-schedule-text").hidden = true;
-    }
 
-    console.log(page_to_load);
+        document.getElementById("study-guides-heading-bg").hidden = true;
+        document.getElementById("study-guides-heading").hidden = true;
+        document.getElementById("study-guides-text-bg").hidden = true;
+        document.getElementById("study-guides-text").hidden = true;
+    }
   }
 
 function load_page(page_to_load){
@@ -78,6 +92,10 @@ function load_page(page_to_load){
     var assessment_schedule_text_child = document.getElementById("assessment-schedule-child-text");
     var assessment_schedule_text = document.getElementById("assessment-schedule-text");
 
+    var study_guides_heading_bg = document.getElementById("study-guides-heading-bg");
+    var study_guides_heading = document.getElementById("study-guides-heading");
+    var study_guides_text_bg = document.getElementById("study-guides-text-bg");
+    var study_guides_text = document.getElementById("study-guides-text");
 
     subject_heading_bg.hidden = false;
     subject_heading.hidden = false;
@@ -96,9 +114,16 @@ function load_page(page_to_load){
     assessment_schedule_text_child.hidden = false;
     assessment_schedule_text.hidden = false;
 
+    study_guides_heading_bg.hidden = false;
+    study_guides_heading.hidden = false;
+    study_guides_text_bg.hidden = false;
+    study_guides_text.hidden = false;
+
     subject_heading.innerHTML = page_to_load; 
     subject_about.innerHTML = about_dict[page_to_load];
 
     past_papers_text.innerHTML = past_paper_dict[page_to_load];
     assessment_schedule_text.innerHTML = assessment_schedule_dict[page_to_load];
+
+    study_guides_text.innerHTML = study_guides_dict[page_to_load];
 }
