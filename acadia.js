@@ -11,11 +11,11 @@ let about_dict = {
 }
 
 let past_paper_dict = {
-    "Calculus": "Complex Numbers (AS91577): </br> -  <a href='https://github.com/Mcleodz/Acadia'>2021</a> </br> -  <a href='https://github.com/Mcleodz/Acadia'>2022</a> </br> -  <a href='https://github.com/Mcleodz/Acadia'>2023</a> </br> </br>"
+    "Calculus": "Complex Numbers (AS91577): </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2021/91577-exm-2021.pdf'>2021</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2020/91577-exm-2020.pdf'>2020</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/exams/2019/91577-exm-2019.pdf'>2019</a> </br> </br>"
 }
 
 let assessment_schedule_dict = {
-    "Calculus": "Complex Numbers (AS91577): </br> -  <a href='https://github.com/Mcleodz/Acadia'>2021</a> </br> -  <a href='https://github.com/Mcleodz/Acadia'>2022</a> </br> -  <a href='https://github.com/Mcleodz/Acadia'>2023</a> </br> </br>"
+    "Calculus": "Complex Numbers (AS91577): </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2021/91577-ass-2021.pdf'>2021</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2020/91577-ass-2020.pdf'>2020</a> </br> -  <a href='http://www.nzqa.govt.nz/nqfdocs/ncea-resource/schedules/2019/91577-ass-2019.pdf'>2019</a> </br> </br>"
 }
 
 function clear_page(page_to_load) {
