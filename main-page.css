@@ -1,3 +1,8 @@
+@font-face {
+    font-family:"Lemon";
+    src: url(Lemon/Lemon-Regular.ttf);
+}
+
 .title{
     color: #F19A3E;
     font-family: lemon;
@@ -45,8 +50,6 @@ body{
     height: fit-content;
     background-color: #666666;
     border-radius: 15px;
-
-    visibility: visible;
 }
 
 .heading{
@@ -57,8 +60,6 @@ body{
     font-weight: 400;
     line-height: normal;
     text-align: center;
-
-    visibility: visible;
 }
 
 .text-bg{
@@ -66,8 +67,6 @@ body{
     height: fit-content;
     background-color: #666666;
     border-radius: 15px;
-
-    visibility: visible;
 }
 
 .text{
@@ -85,5 +84,20 @@ body{
     padding-bottom: 15px;
     padding-right: 25px;
 
-    visibility: visible;
+}
+
+.past-paper-parent{
+    width: 100vw;
+    height: fit-content;
+}
+
+.past-paper-child{
+    float: inline-start;
+    width: 49%;
+    height: fit-content;
+
+    background-color: #666666;
+    border-radius: 15px;
+    margin-right:1%;
+    margin-bottom:1%;
 }
