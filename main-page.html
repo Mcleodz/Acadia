@@ -1,86 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="main-page.css">
-        <script src="acadia.js"></script>
-    </head>
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main-page.css">
+    <script src="acadia.js"></script>
+</head>
 
-        <h1 class="title">
-            Acadia
-        </h1>
+<body>
+    <h1 class="title">
+        Acadia
 
+    </h1>
 
-        <!-- Search bar elements -->
-        <div class="subjects-bar">
-            <div class="subject">
-                <button class="subject-button" id="calculus-button" onclick="clear_page('Calculus')">L3 Calculus</button>
-            </div>
-
-            <div class="subject">
-                <button class="subject-button" id="english-button" onclick="clear_page('English')">L3 English</button>
-            </div>
-
-            <div class="subject">
-                <button class="subject-button" id="software-development-button" onclick="clear_page('Software Development')">L3 Software Development</button>
-            </div>
-
-            <div class="subject">
-                <button class="subject-button" id="electronics-button" onclick="clear_page('Electronics')">L3 Electronics</button>
-            </div>
-
-             <div class="subject">
-                <button class="subject-button" id="physics-button" onclick="clear_page('Physics')">L3 Physics</button>
-            </div>
-
-            <div class="subject">
-                <button class="subject-button" id="home-button" onclick="clear_page('Home')">Home</button>
-            </div>
-
+    <!-- Search bar elements -->
+    <div class="subjects-bar">
+        <div class="subject">
+            <button class="subject-button" id="calculus-button" onclick="clear_page('Calculus')">L3 Calculus</button>
         </div>
 
-
-        <div>
-            <!-- About Us Div -->
-            </br>
-            </br>
-            </br>
-
-            <div class="heading-bg" id="about-us-heading-bg">
-                <h2 class="heading" id="about-us-heading">
-                    About Us
-                </h2>
-            </div>
-        
-            <div class="text-bg" id="about-us-bg">
-                <p class="text" id="about-us">
-                    Welcome to Acadia, your one stop shop for study in level 3.
-                </br>
-                </br>
-                    Acadia is designed to be an easy to use hub for everything you need to study in NCEA Level 3.
-                </br>
-                    By now, we all know that the NZQA website is simply insufficient when it comes 
-                </br>
-                    to looking at past papers, and finding good exemplars and study guides. Its for this reason, that I made Acadia; to solve the problem of simplifying study.
-                </p>
-            </div>
+        <div class="subject">
+            <button class="subject-button" id="english-button" onclick="clear_page('English')">L3 English</button>
         </div>
-        
-        <div>
-            <!-- Subject Data Div-->
-            <div class="heading-bg" id="subject-heading-bg" hidden="true">
-                <h2 class="heading" id="subject-heading" hidden="true">
-                    Placeholder Text
-                </h2>
-            </div>
 
-            <div class="text-bg" id="subject-about-bg" hidden="true">
-                <p class="text" id="subject-about" hidden="true">
-                    Placeholder text for subject info
-                </p>
-            </div>
+        <div class="subject">
+            <button class="subject-button" id="software-development-button"
+                onclick="clear_page('Software Development')">L3 Software Development</button>
+        </div>
+
+        <div class="subject">
+            <button class="subject-button" id="electronics-button" onclick="clear_page('Electronics')">L3
+                Electronics</button>
+        </div>
+
+        <div class="subject">
+            <button class="subject-button" id="physics-button" onclick="clear_page('Physics')">L3 Physics</button>
+        </div>
+
+        <div class="subject">
+            <button class="subject-button" id="home-button" onclick="clear_page('Home')">Home</button>
+        </div>
+
+    </div>
+
+    <div>
+        <!-- About Us Div -->
+        </br>
+        </br>
+        </br>
+
+        <div class="heading-bg" id="about-us-heading-bg">
+            <h2 class="heading" id="about-us-heading">
+                About Us
+            </h2>
+        </div>
+
+        <div class="text-bg" id="about-us-bg">
+            <p class="text" id="about-us">
+                Welcome to Acadia, your one stop shop for study in level 3.
+                </br>
+                </br>
+                Acadia is designed to be an easy to use hub for everything you need to study in NCEA Level 3.
+                </br>
+                By now, we all know that the NZQA website is simply insufficient when it comes
+                </br>
+                to looking at past papers, and finding good exemplars and study guides. Its for this reason, that I made
+                Acadia; to solve the problem of simplifying study.
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <!-- Subject Data Div-->
+        <div class="heading-bg" id="subject-heading-bg" hidden="true">
+            <h2 class="heading" id="subject-heading" hidden="true">
+                Placeholder Text
+            </h2>
+        </div>
+
+        <div class="text-bg" id="subject-about-bg" hidden="true">
+            <p class="text" id="subject-about" hidden="true">
+                Placeholder text for subject info
+            </p>
         </div>
 
         <div class="past-paper-parent" id="past-paper-parent-headings" hidden="true">
@@ -94,20 +95,31 @@
                     Assessment Schedules
                 </h2>
             </div>
+            <div class="past-paper-child" id="study-guides-heading-bg" hidden="true">
+                <h2 class="heading" id="study-guides-heading" hidden="true">
+                    Study Guides
+                </h2>
+            </div>
         </div>
 
         <div class="past-paper-parent" id="past-paper-parent-text" hidden="true">
             <div class="past-paper-child" id="past-paper-child-text" hidden="true">
-                <h2 class="text" id="past-paper-text" hidden="true">
+                <p class="text" id="past-paper-text" hidden="true">
                     Placeholder text for Past Papers
-                </h2>
+                </p>
             </div>
             <div class="past-paper-child" id="assessment-schedule-child-text" hidden="true">
-                <h2 class="text" id="assessment-schedule-text" hidden="true">
+                <p class="text" id="assessment-schedule-text" hidden="true">
                     Placeholder Text for Marking Schedules
-                </h2>
+                </p>
+            </div>
+            <div class="past-paper-child" id="study-guides-text-bg" hidden="true">
+                <p class="text" id="study-guides-text" hidden="true">
+                    Placeholder for study guides text
+                </p>
             </div>
         </div>
+    </div>
+</body>
 
-    </body>
 </html>
