@@ -3,6 +3,7 @@
     src: url(Lemon/Lemon-Regular.ttf);
 }
 
+
 .title{
     color: #F19A3E;
     font-family: lemon;
@@ -71,7 +72,7 @@ body{
     
     text-align: center;
     font-family: Lemon;
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
