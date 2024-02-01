@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="main-page.css">
+    <link rel="stylesheet" type="text/css" href="acadia.css">
     <script src="acadia.js"></script>
 </head>
+
 
 <body>
     <h1 class="title">
@@ -15,39 +16,24 @@
 
     <!-- Search bar elements -->
     <div class="subjects-bar">
-        <div class="subject">
+
+            <button class="subject-button" id="home-button" onclick="clear_page('Home')">Home</button>
+        
             <button class="subject-button" id="calculus-button" onclick="clear_page('Calculus')">L3 Calculus</button>
-        </div>
 
-        <div class="subject">
+            <button class="subject-button" id="physics-button" onclick="clear_page('Physics')">L3 Physics</button>
+
             <button class="subject-button" id="english-button" onclick="clear_page('English')">L3 English</button>
-        </div>
 
-        <div class="subject">
             <button class="subject-button" id="software-development-button"
                 onclick="clear_page('Software Development')">L3 Software Development</button>
-        </div>
 
-        <div class="subject">
             <button class="subject-button" id="electronics-button" onclick="clear_page('Electronics')">L3
                 Electronics</button>
-        </div>
-
-        <div class="subject">
-            <button class="subject-button" id="physics-button" onclick="clear_page('Physics')">L3 Physics</button>
-        </div>
-
-        <div class="subject">
-            <button class="subject-button" id="home-button" onclick="clear_page('Home')">Home</button>
-        </div>
-
     </div>
 
     <div>
         <!-- About Us Div -->
-        </br>
-        </br>
-        </br>
 
         <div class="heading-bg" id="about-us-heading-bg">
             <h2 class="heading" id="about-us-heading">
@@ -84,6 +70,7 @@
             </p>
         </div>
 
+
         <div class="past-paper-parent" id="past-paper-parent-headings" hidden="true">
             <div class="past-paper-child" id="past-paper-child-heading" hidden="true">
                 <h2 class="heading" id="past-paper-heading" hidden="true">
@@ -92,7 +79,7 @@
             </div>
             <div class="past-paper-child" id="assessment-schedule-child-heading" hidden="true">
                 <h2 class="heading" id="assessment-schedule-heading" hidden="true">
-                    Assessment Schedules
+                    Mark Scheme
                 </h2>
             </div>
             <div class="past-paper-child" id="study-guides-heading-bg" hidden="true">
@@ -105,17 +92,17 @@
         <div class="past-paper-parent" id="past-paper-parent-text" hidden="true">
             <div class="past-paper-child" id="past-paper-child-text" hidden="true">
                 <p class="text" id="past-paper-text" hidden="true">
-                    Placeholder text for Past Papers
+                    Placeholder text
                 </p>
             </div>
             <div class="past-paper-child" id="assessment-schedule-child-text" hidden="true">
                 <p class="text" id="assessment-schedule-text" hidden="true">
-                    Placeholder Text for Marking Schedules
+                    Placeholder text
                 </p>
             </div>
             <div class="past-paper-child" id="study-guides-text-bg" hidden="true">
                 <p class="text" id="study-guides-text" hidden="true">
-                    Placeholder for study guides text
+                    Placeholder text
                 </p>
             </div>
         </div>
