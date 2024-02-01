@@ -10,8 +10,7 @@
     font-weight: 400;
     line-height: normal;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
+    margin-bottom: 1%;
 }
 
 body{
@@ -19,19 +18,13 @@ body{
 }
 
 .subjects-bar{
-    margin:auto;
     width: 100vw;
     height: fit-content;
-}
-
-.subject{
-    float: left;
-    width: 15%; 
-    height: fit-content;
+    margin:1%;
 }
 
 .subject-button{
-    width: 275px;
+    width:15%;
     height: 60px;
     color: #FFF;
     font-family: Lemon;
@@ -39,10 +32,12 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-align: center;
+    text-align-last:center;
     background-color: #666666;
     border-radius: 15px;
-    margin-left: 35%; 
+    margin:0.5%;
+
+    display:inline-grid;
 }
 
 .heading-bg{
@@ -50,6 +45,7 @@ body{
     height: fit-content;
     background-color: #666666;
     border-radius: 15px;
+    margin:0.5%;
 }
 
 .heading{
@@ -67,6 +63,7 @@ body{
     height: fit-content;
     background-color: #666666;
     border-radius: 15px;
+    margin:0.5%;
 }
 
 .text{
@@ -92,12 +89,12 @@ body{
 }
 
 .past-paper-child{
-    float: inline-start;
-    width: 32%;
+    display:inline-grid;
+    width: 31%;
+    min-height:191.05px;
     height: fit-content;
 
     background-color: #666666;
     border-radius: 15px;
-    margin-right:1%;
-    margin-bottom:1%;
+    margin:0.5%;
 }
