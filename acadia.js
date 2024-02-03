@@ -11,6 +11,7 @@ function load_page(subject){
 
     if(subject == "Home"){
         about_us.hidden = false;
+        subject_data.hidden = true;
     }
 
     else{
